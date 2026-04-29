@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADVICE APP</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+      :root {
+        /* ## Colors */
+
+        /* ### Primary */
+
+        --Blue-200: hsl(193, 38%, 86%);
+        --Green-300: hsl(150, 100%, 66%);
+
+        /* ### Neutral */
+
+        --Blue-600: hsl(217, 19%, 38%);
+        --Blue-900: hsl(217, 19%, 24%);
+        --Blue-950: hsl(218, 23%, 16%);
+      }
+    </style>
+  </head>
+  <body class="w-[375px] md:w-[1440px] bg-[var(--Blue-950)]">
+    <div
+      class="mx-auto mt-40 bg-[var(--Blue-900)] w-75 h-70 md:w-130 md:h-70 rounded-lg flex flex-col items-center gap-3 pt-10 px-4 relative md:gap-6"
+    >
+      <p
+        class="font-bold font-[Manrope] text-[10px] text-[var(--Green-300)] tracking-[3px] md:text-[12px] md:tracking-[4px]"
+        id="textNumber"
+      >
+        ADVICE #117
+      </p>
+      <h1
+        class="font-bold font-[Manrope] h-30 md:h-25 text-xl text-[var(--Blue-200)] text-center px-[10px] md:text-[24px] md:px-[50px]"
+        id="refreshContent"
+      ></h1>
+      <img src="/images/pattern-divider-mobile.svg" alt="" class="md:hidden" />
+      <img
+        src="/images/pattern-divider-desktop.svg"
+        alt=""
+        class="hidden md:block"
+      />
+
+      <div
+        class="bg-[var(--Green-300)] w-16 h-16 rounded-full flex justify-center items-center absolute bottom-[-30px] hover:cursor-pointer hover:shadow-[0_0_20px] shadow-green-300"
+        id="refreshBtn"
+      >
+        <img src="/images/icon-dice.svg" alt="" />
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
