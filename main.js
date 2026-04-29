@@ -7,7 +7,7 @@ let getApi = async () => {
   let convertedApi = await adviceApi.json();
   console.log(convertedApi);
 
-  adviceContent.textContent = `${convertedApi.slip.advice}`;
+  adviceContent.textContent = `"${convertedApi.slip.advice}"`;
   textNumber.textContent = `ADVICE #${convertedApi.slip.id}`;
 };
 
